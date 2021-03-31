@@ -5,7 +5,7 @@ import { ContainerStyled } from './style'
 
 function Main() {
   const [data, setData] = useState({})
-  const [country, setCountry] = useState('Brazil')
+  const [country, setCountry] = useState('France')
   const updateAt = new Date().toLocaleString()
 
   const getCovidData = useCallback((country) => {
@@ -27,7 +27,7 @@ function Main() {
       <div className="mb-2">
         <Panel
           data={data}
-          updateAt={updateAt} // Data de atualização do próprio browser
+          updateAt={updateAt} 
           onChange={handleChange}
           country={country}
           getCovidData={getCovidData}

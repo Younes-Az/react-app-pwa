@@ -14,30 +14,30 @@ import SenegalFlag from '../../assets/images/senegal.png'
 import PortugalFlag from '../../assets/images/portugal.png'
 import WorldFlag from '../../assets/images/world.png'
  
-// Array com os países: Nome, valor API e foto(bandeira).
+
 const COUNTRIES = [
     {
-        label: 'Afeganistão',
+        label: 'Afghanistan',
         value: 'Afghanistan',
         flag: AfghanistanFlag
     },
     {
-        label: 'Alemanha',
+        label: 'Germany',
         value: 'Germany',
         flag: GermanyFlag
     },
     {
-        label: 'Argentina',
-        value: 'Argentina',
+        label: 'Argentine',
+        value: 'Argentine',
         flag: ArgentinaFlag
     },
     {
-        label: 'Bélgica',
+        label: 'Belgium',
         value: 'Belgium',
         flag: BelgiumFlag
     },
     {
-        label: 'Brasil',
+        label: 'Brazil',
         value: 'Brazil',
         flag: BrazilFlag
     },
@@ -52,27 +52,27 @@ const COUNTRIES = [
         flag: ChinaFlag
     },
     {
-        label: 'Estados Unidos',
+        label: 'Usa',
         value: 'USA',
         flag: UsaFlag
     },
     {
-        label: 'França',
+        label: 'Françe',
         value: 'France',
         flag: FranceFlag
     },
     {
-        label: 'Inglaterra',
+        label: 'England',
         value: 'England',
         flag: EnglandFlag
     },
     {
-        label: 'Itália',
+        label: 'Italy',
         value: 'Italy',
         flag: ItalyFlag
     },
     {
-        label: 'Japão',
+        label: 'Japan',
         value: 'Japan',
         flag: JapanFlag
     },
@@ -87,7 +87,7 @@ const COUNTRIES = [
         flag: PortugalFlag
     },
     {
-    label: 'Mundo',
+    label: 'world',
         value: 'World',
         flag: WorldFlag
     }
