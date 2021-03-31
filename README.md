@@ -4,10 +4,11 @@ COVID-19 INFORMATION PWA
 🚀 Technologies
 Ce projet a été développé lors  avec les technologies suivantes:
 
-ReactJS
-TypeScript
-styled-components
-material-ui
+-ReactJS
+-TypeScript
+-styled-components
+-material-ui
+
 
 ℹ️ Comment utiliser
 # Clone this repository
