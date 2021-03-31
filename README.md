@@ -11,7 +11,7 @@ material-ui
 
 ℹ️ Comment utiliser
 # Clone this repository
-$ https://github.com/Younes-Az/react-app-pwa
+$ git clone https://github.com/Younes-Az/react-app-pwa
 
 # Go into the repository
 $ cd pwa-covid-app-react
