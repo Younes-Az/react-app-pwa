@@ -1,6 +1,7 @@
 import React, { memo, useState, useCallback, useEffect } from 'react'
 import Api from '../../api'
 import Board from './composont/Board'
+import Panel from './composont/Panel'
 import { ContainerStyled } from './style'
 
 function Main() {

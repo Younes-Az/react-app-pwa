@@ -19,8 +19,8 @@ function Panel({ updateAt, onChange, data, country, getCovidData }) {
         </MenuItem>
     )
 
-    const textCovid19 = `País: ${country}, Total de Casos: ${cases}, Óbitos de Hoje: ${todayDeaths}, 
-    Casos de Hoje: ${todayCases}, Total de Mortes: ${deaths}, Recuperados: ${recovered}.`
+    const textCovid19 = `pays: ${country}, Nombre total de cas: ${cases}, Décès d'aujourd'hui: ${todayDeaths}, 
+    Cas d'aujourd'hui: ${todayCases}, Nombre total de décès: ${deaths}, Rétabli: ${recovered}.`
     
     
     const copyInfo = () => {
@@ -28,19 +28,19 @@ function Panel({ updateAt, onChange, data, country, getCovidData }) {
     }   
 
    
-    // const shareInfo = () => {
-    //     navigator.share({
-    //         title: `Dados do Covid-19 - ${country}`,
-    //         text: textCovid19,
-    //         url: 'https://covid19-pwa.netlify.app/' 
-    //     })
-    // }
+    const shareInfo = () => {
+        navigator.share({
+            title: `Données Covid-19 - ${country}`,
+            text: textCovid19,
+            url: 'https://covid19-pwa.netlify.app/' 
+        })
+    }
 
     
     const renderShareButton = (
         <div>
             <Button variant="contained" color="primary" onClick={shareInfo}>
-                Compartilhar
+                Partager
             </Button>
         </div>
     )
@@ -57,9 +57,9 @@ function Panel({ updateAt, onChange, data, country, getCovidData }) {
         <Card>
             <CardPanelContentStyled>
                 <div>
-                    <Typography variant="h5" component="span" color="primary">Coronavírus (COVID-19) </Typography>
-                    <Typography variant="h6" component="span" color="primary">Visão Geral </Typography>
-                    <Typography variant="body2" component="span" color="primary">Atualizado em: {updateAt}</Typography>
+                    <Typography variant="h5" component="span" color="primary">Coronavirus (COVID-19) </Typography>
+                    <Typography variant="h6" component="span" color="primary">Aperçu </Typography>
+                    <Typography variant="body2" component="span" color="primary">Atualiser em: {updateAt}</Typography>
                     <div className="pt-2">
                         <Select onChange={onChange} value={country}>
                             {COUNTRIES.map(renderCountries)}
